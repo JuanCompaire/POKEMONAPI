@@ -1,0 +1,1211 @@
+{
+"SELECT\r\n    p.numero_pokedex,\r\n    p.nombre,\r\n    GROUP_CONCAT(t.nombre SEPARATOR '\/') AS tipos,\r\n    p.peso,\r\n    p.altura,\r\n    p.foto\r\nFROM\r\n    pokemon p\r\nJOIN\r\n    pokemon_tipo pt ON p.numero_pokedex = pt.numero_pokedex\r\nJOIN\r\n    tipo t ON pt.id_tipo = t.id_tipo\r\nGROUP BY\r\n    p.numero_pokedex, p.nombre, p.peso, p.altura, p.foto\r\nORDER BY\r\n    p.numero_pokedex": [
+	{
+		"numero_pokedex" : 1,
+		"nombre" : "Bulbasaur",
+		"tipos" : "Planta\/Veneno",
+		"peso" : 6.9,
+		"altura" : 0.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/bulbasaur.png"
+	},
+	{
+		"numero_pokedex" : 2,
+		"nombre" : "Ivysaur",
+		"tipos" : "Planta\/Veneno",
+		"peso" : 13.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/ivysaur.png"
+	},
+	{
+		"numero_pokedex" : 3,
+		"nombre" : "Venusaur",
+		"tipos" : "Planta\/Veneno",
+		"peso" : 100.0,
+		"altura" : 2.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/venusaur.png"
+	},
+	{
+		"numero_pokedex" : 4,
+		"nombre" : "Charmander",
+		"tipos" : "Fuego",
+		"peso" : 8.5,
+		"altura" : 0.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/charmander.png"
+	},
+	{
+		"numero_pokedex" : 5,
+		"nombre" : "Charmeleon",
+		"tipos" : "Fuego",
+		"peso" : 19.0,
+		"altura" : 1.1,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/charmeleon.png"
+	},
+	{
+		"numero_pokedex" : 6,
+		"nombre" : "Charizard",
+		"tipos" : "Fuego\/Volador",
+		"peso" : 90.5,
+		"altura" : 1.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/charizard.png"
+	},
+	{
+		"numero_pokedex" : 7,
+		"nombre" : "Squirtle",
+		"tipos" : "Agua",
+		"peso" : 9.0,
+		"altura" : 0.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/squirtle.png"
+	},
+	{
+		"numero_pokedex" : 8,
+		"nombre" : "Wartortle",
+		"tipos" : "Agua",
+		"peso" : 22.5,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/wartortle.png"
+	},
+	{
+		"numero_pokedex" : 9,
+		"nombre" : "Blastoise",
+		"tipos" : "Agua",
+		"peso" : 85.5,
+		"altura" : 1.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/blastoise.png"
+	},
+	{
+		"numero_pokedex" : 10,
+		"nombre" : "Caterpie",
+		"tipos" : "Bicho",
+		"peso" : 2.9,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/caterpie.png"
+	},
+	{
+		"numero_pokedex" : 11,
+		"nombre" : "Metapod",
+		"tipos" : "Bicho",
+		"peso" : 9.9,
+		"altura" : 0.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/metapod.png"
+	},
+	{
+		"numero_pokedex" : 12,
+		"nombre" : "Butterfree",
+		"tipos" : "Bicho\/Volador",
+		"peso" : 32.0,
+		"altura" : 1.1,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/butterfree.png"
+	},
+	{
+		"numero_pokedex" : 13,
+		"nombre" : "Weedle",
+		"tipos" : "Veneno\/Bicho",
+		"peso" : 3.2,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/weedle.png"
+	},
+	{
+		"numero_pokedex" : 14,
+		"nombre" : "Kakuna",
+		"tipos" : "Veneno\/Bicho",
+		"peso" : 10.0,
+		"altura" : 0.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/kakuna.png"
+	},
+	{
+		"numero_pokedex" : 15,
+		"nombre" : "Beedrill",
+		"tipos" : "Veneno\/Bicho",
+		"peso" : 29.5,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/beedrill.png"
+	},
+	{
+		"numero_pokedex" : 16,
+		"nombre" : "Pidgey",
+		"tipos" : "Volador\/Normal",
+		"peso" : 1.8,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/pidgey.png"
+	},
+	{
+		"numero_pokedex" : 17,
+		"nombre" : "Pidgeotto",
+		"tipos" : "Normal\/Volador",
+		"peso" : 30.0,
+		"altura" : 1.1,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/pidgeotto.png"
+	},
+	{
+		"numero_pokedex" : 18,
+		"nombre" : "Pidgeot",
+		"tipos" : "Volador\/Normal",
+		"peso" : 39.5,
+		"altura" : 1.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/pidgeot.png"
+	},
+	{
+		"numero_pokedex" : 19,
+		"nombre" : "Rattata",
+		"tipos" : "Normal",
+		"peso" : 3.5,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/rattata.png"
+	},
+	{
+		"numero_pokedex" : 20,
+		"nombre" : "Raticate",
+		"tipos" : "Normal",
+		"peso" : 18.5,
+		"altura" : 0.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/raticate.png"
+	},
+	{
+		"numero_pokedex" : 21,
+		"nombre" : "Spearow",
+		"tipos" : "Volador\/Normal",
+		"peso" : 2.0,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/spearow.png"
+	},
+	{
+		"numero_pokedex" : 22,
+		"nombre" : "Fearow",
+		"tipos" : "Volador\/Normal",
+		"peso" : 38.0,
+		"altura" : 1.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/fearow.png"
+	},
+	{
+		"numero_pokedex" : 23,
+		"nombre" : "Ekans",
+		"tipos" : "Veneno",
+		"peso" : 6.9,
+		"altura" : 2.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/ekans.png"
+	},
+	{
+		"numero_pokedex" : 24,
+		"nombre" : "Arbok",
+		"tipos" : "Veneno",
+		"peso" : 65.0,
+		"altura" : 3.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/arbok.png"
+	},
+	{
+		"numero_pokedex" : 25,
+		"nombre" : "Pikachu",
+		"tipos" : "Eléctrico",
+		"peso" : 6.0,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/pikachu.png"
+	},
+	{
+		"numero_pokedex" : 26,
+		"nombre" : "Raichu",
+		"tipos" : "Eléctrico",
+		"peso" : 30.0,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/raichu.png"
+	},
+	{
+		"numero_pokedex" : 27,
+		"nombre" : "Sandshrew",
+		"tipos" : "Tierra",
+		"peso" : 12.0,
+		"altura" : 0.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/sandshrew.png"
+	},
+	{
+		"numero_pokedex" : 28,
+		"nombre" : "Sandslash",
+		"tipos" : "Tierra",
+		"peso" : 29.5,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/sandslash.png"
+	},
+	{
+		"numero_pokedex" : 29,
+		"nombre" : "Nidoran♀",
+		"tipos" : "Veneno",
+		"peso" : 7.0,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/nidoranf.png"
+	},
+	{
+		"numero_pokedex" : 30,
+		"nombre" : "Nidorina",
+		"tipos" : "Veneno",
+		"peso" : 20.0,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/nidorina.png"
+	},
+	{
+		"numero_pokedex" : 31,
+		"nombre" : "Nidoqueen",
+		"tipos" : "Veneno\/Tierra",
+		"peso" : 60.0,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/nidoqueen.png"
+	},
+	{
+		"numero_pokedex" : 32,
+		"nombre" : "Nidoran♂",
+		"tipos" : "Veneno",
+		"peso" : 9.0,
+		"altura" : 0.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/nidoranm.png"
+	},
+	{
+		"numero_pokedex" : 33,
+		"nombre" : "Nidorino",
+		"tipos" : "Veneno",
+		"peso" : 19.5,
+		"altura" : 0.9,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/nidorino.png"
+	},
+	{
+		"numero_pokedex" : 34,
+		"nombre" : "Nidoking",
+		"tipos" : "Tierra\/Veneno",
+		"peso" : 62.0,
+		"altura" : 1.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/nidoking.png"
+	},
+	{
+		"numero_pokedex" : 35,
+		"nombre" : "Clefairy",
+		"tipos" : "Normal",
+		"peso" : 7.5,
+		"altura" : 0.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/clefairy.png"
+	},
+	{
+		"numero_pokedex" : 36,
+		"nombre" : "Clefable",
+		"tipos" : "Normal",
+		"peso" : 40.0,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/clefable.png"
+	},
+	{
+		"numero_pokedex" : 37,
+		"nombre" : "Vulpix",
+		"tipos" : "Fuego",
+		"peso" : 9.9,
+		"altura" : 0.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/vulpix.png"
+	},
+	{
+		"numero_pokedex" : 38,
+		"nombre" : "Ninetales",
+		"tipos" : "Fuego",
+		"peso" : 19.9,
+		"altura" : 1.1,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/ninetales.png"
+	},
+	{
+		"numero_pokedex" : 39,
+		"nombre" : "Jigglypuff",
+		"tipos" : "Normal",
+		"peso" : 5.5,
+		"altura" : 0.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/jigglypuff.png"
+	},
+	{
+		"numero_pokedex" : 40,
+		"nombre" : "Wigglytuff",
+		"tipos" : "Normal",
+		"peso" : 12.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/wigglytuff.png"
+	},
+	{
+		"numero_pokedex" : 41,
+		"nombre" : "Zubat",
+		"tipos" : "Veneno\/Volador",
+		"peso" : 7.5,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/zubat.png"
+	},
+	{
+		"numero_pokedex" : 42,
+		"nombre" : "Golbat",
+		"tipos" : "Veneno\/Volador",
+		"peso" : 55.0,
+		"altura" : 1.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/golbat.png"
+	},
+	{
+		"numero_pokedex" : 43,
+		"nombre" : "Oddish",
+		"tipos" : "Planta\/Veneno",
+		"peso" : 5.4,
+		"altura" : 0.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/oddish.png"
+	},
+	{
+		"numero_pokedex" : 44,
+		"nombre" : "Gloom",
+		"tipos" : "Planta\/Veneno",
+		"peso" : 8.6,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/gloom.png"
+	},
+	{
+		"numero_pokedex" : 45,
+		"nombre" : "Vileplume",
+		"tipos" : "Planta\/Veneno",
+		"peso" : 18.6,
+		"altura" : 1.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/vileplume.png"
+	},
+	{
+		"numero_pokedex" : 46,
+		"nombre" : "Paras",
+		"tipos" : "Planta\/Bicho",
+		"peso" : 5.4,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/paras.png"
+	},
+	{
+		"numero_pokedex" : 47,
+		"nombre" : "Parasect",
+		"tipos" : "Planta\/Bicho",
+		"peso" : 29.5,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/parasect.png"
+	},
+	{
+		"numero_pokedex" : 48,
+		"nombre" : "Venonat",
+		"tipos" : "Bicho\/Veneno",
+		"peso" : 30.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/venonat.png"
+	},
+	{
+		"numero_pokedex" : 49,
+		"nombre" : "Venomoth",
+		"tipos" : "Veneno\/Bicho",
+		"peso" : 12.5,
+		"altura" : 1.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/venomoth.png"
+	},
+	{
+		"numero_pokedex" : 50,
+		"nombre" : "Diglett",
+		"tipos" : "Tierra",
+		"peso" : 0.8,
+		"altura" : 0.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/diglett.png"
+	},
+	{
+		"numero_pokedex" : 51,
+		"nombre" : "Dugtrio",
+		"tipos" : "Tierra",
+		"peso" : 33.3,
+		"altura" : 0.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/dugtrio.png"
+	},
+	{
+		"numero_pokedex" : 52,
+		"nombre" : "Meowth",
+		"tipos" : "Normal",
+		"peso" : 4.2,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/meowth.png"
+	},
+	{
+		"numero_pokedex" : 53,
+		"nombre" : "Persian",
+		"tipos" : "Normal",
+		"peso" : 32.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/persian.png"
+	},
+	{
+		"numero_pokedex" : 54,
+		"nombre" : "Psyduck",
+		"tipos" : "Agua",
+		"peso" : 19.6,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/psyduck.png"
+	},
+	{
+		"numero_pokedex" : 55,
+		"nombre" : "Golduck",
+		"tipos" : "Agua",
+		"peso" : 76.6,
+		"altura" : 1.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/golduck.png"
+	},
+	{
+		"numero_pokedex" : 56,
+		"nombre" : "Mankey",
+		"tipos" : "Lucha",
+		"peso" : 28.0,
+		"altura" : 0.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/mankey.png"
+	},
+	{
+		"numero_pokedex" : 57,
+		"nombre" : "Primeape",
+		"tipos" : "Lucha",
+		"peso" : 32.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/primeape.png"
+	},
+	{
+		"numero_pokedex" : 58,
+		"nombre" : "Growlithe",
+		"tipos" : "Fuego",
+		"peso" : 19.0,
+		"altura" : 0.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/growlithe.png"
+	},
+	{
+		"numero_pokedex" : 59,
+		"nombre" : "Arcanine",
+		"tipos" : "Fuego",
+		"peso" : 155.0,
+		"altura" : 1.9,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/arcanine.png"
+	},
+	{
+		"numero_pokedex" : 60,
+		"nombre" : "Poliwag",
+		"tipos" : "Agua",
+		"peso" : 12.4,
+		"altura" : 0.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/poliwag.png"
+	},
+	{
+		"numero_pokedex" : 61,
+		"nombre" : "Poliwhirl",
+		"tipos" : "Agua",
+		"peso" : 20.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/poliwhirl.png"
+	},
+	{
+		"numero_pokedex" : 62,
+		"nombre" : "Poliwrath",
+		"tipos" : "Lucha\/Agua",
+		"peso" : 54.0,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/poliwrath.png"
+	},
+	{
+		"numero_pokedex" : 63,
+		"nombre" : "Abra",
+		"tipos" : "Psíquico",
+		"peso" : 19.5,
+		"altura" : 0.9,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/abra.png"
+	},
+	{
+		"numero_pokedex" : 64,
+		"nombre" : "Kadabra",
+		"tipos" : "Roca",
+		"peso" : 56.5,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/kadabra.png"
+	},
+	{
+		"numero_pokedex" : 65,
+		"nombre" : "Alakazam",
+		"tipos" : "Tierra",
+		"peso" : 48.0,
+		"altura" : 1.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/alakazam.png"
+	},
+	{
+		"numero_pokedex" : 66,
+		"nombre" : "Machop",
+		"tipos" : "Lucha",
+		"peso" : 19.5,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/machop.png"
+	},
+	{
+		"numero_pokedex" : 67,
+		"nombre" : "Machoke",
+		"tipos" : "Lucha",
+		"peso" : 70.5,
+		"altura" : 1.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/machoke.png"
+	},
+	{
+		"numero_pokedex" : 68,
+		"nombre" : "Machamp",
+		"tipos" : "Lucha",
+		"peso" : 130.0,
+		"altura" : 1.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/machamp.png"
+	},
+	{
+		"numero_pokedex" : 69,
+		"nombre" : "Bellsprout",
+		"tipos" : "Veneno\/Planta",
+		"peso" : 4.0,
+		"altura" : 0.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/bellsprout.png"
+	},
+	{
+		"numero_pokedex" : 70,
+		"nombre" : "Weepinbell",
+		"tipos" : "Veneno\/Planta",
+		"peso" : 6.4,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/weepinbell.png"
+	},
+	{
+		"numero_pokedex" : 71,
+		"nombre" : "Victreebel",
+		"tipos" : "Planta\/Veneno",
+		"peso" : 15.5,
+		"altura" : 1.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/victreebel.png"
+	},
+	{
+		"numero_pokedex" : 72,
+		"nombre" : "Tentacool",
+		"tipos" : "Veneno\/Agua",
+		"peso" : 45.5,
+		"altura" : 0.9,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/tentacool.png"
+	},
+	{
+		"numero_pokedex" : 73,
+		"nombre" : "Tentacruel",
+		"tipos" : "Veneno\/Agua",
+		"peso" : 55.0,
+		"altura" : 1.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/tentacruel.png"
+	},
+	{
+		"numero_pokedex" : 74,
+		"nombre" : "Geodude",
+		"tipos" : "Tierra\/Roca",
+		"peso" : 20.0,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/geodude.png"
+	},
+	{
+		"numero_pokedex" : 75,
+		"nombre" : "Graveler",
+		"tipos" : "Tierra\/Roca",
+		"peso" : 105.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/graveler.png"
+	},
+	{
+		"numero_pokedex" : 76,
+		"nombre" : "Golem",
+		"tipos" : "Roca\/Tierra",
+		"peso" : 300.0,
+		"altura" : 1.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/golem.png"
+	},
+	{
+		"numero_pokedex" : 77,
+		"nombre" : "Ponyta",
+		"tipos" : "Fuego",
+		"peso" : 30.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/ponyta.png"
+	},
+	{
+		"numero_pokedex" : 78,
+		"nombre" : "Rapidash",
+		"tipos" : "Fuego",
+		"peso" : 95.0,
+		"altura" : 1.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/rapidash.png"
+	},
+	{
+		"numero_pokedex" : 79,
+		"nombre" : "Slowpoke",
+		"tipos" : "Psíquico\/Agua",
+		"peso" : 36.0,
+		"altura" : 1.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/slowpoke.png"
+	},
+	{
+		"numero_pokedex" : 80,
+		"nombre" : "Slowbro",
+		"tipos" : "Agua\/Psíquico",
+		"peso" : 78.5,
+		"altura" : 1.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/slowbro.png"
+	},
+	{
+		"numero_pokedex" : 81,
+		"nombre" : "Magnemite",
+		"tipos" : "Eléctrico",
+		"peso" : 6.0,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/magnemite.png"
+	},
+	{
+		"numero_pokedex" : 82,
+		"nombre" : "Magneton",
+		"tipos" : "Eléctrico",
+		"peso" : 60.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/magneton.png"
+	},
+	{
+		"numero_pokedex" : 83,
+		"nombre" : "Farfetch'd",
+		"tipos" : "Normal\/Volador",
+		"peso" : 15.0,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/farfetchd.png"
+	},
+	{
+		"numero_pokedex" : 84,
+		"nombre" : "Doduo",
+		"tipos" : "Normal\/Volador",
+		"peso" : 39.2,
+		"altura" : 1.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/doduo.png"
+	},
+	{
+		"numero_pokedex" : 85,
+		"nombre" : "Dodrio",
+		"tipos" : "Normal\/Volador",
+		"peso" : 85.2,
+		"altura" : 1.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/dodrio.png"
+	},
+	{
+		"numero_pokedex" : 86,
+		"nombre" : "Seel",
+		"tipos" : "Agua\/Hielo",
+		"peso" : 90.0,
+		"altura" : 1.1,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/seel.png"
+	},
+	{
+		"numero_pokedex" : 87,
+		"nombre" : "Dewgong",
+		"tipos" : "Hielo\/Agua",
+		"peso" : 120.0,
+		"altura" : 1.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/dewgong.png"
+	},
+	{
+		"numero_pokedex" : 88,
+		"nombre" : "Grimer",
+		"tipos" : "Veneno",
+		"peso" : 30.0,
+		"altura" : 0.9,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/grimer.png"
+	},
+	{
+		"numero_pokedex" : 89,
+		"nombre" : "Muk",
+		"tipos" : "Veneno",
+		"peso" : 30.0,
+		"altura" : 1.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/muk.png"
+	},
+	{
+		"numero_pokedex" : 90,
+		"nombre" : "Shellder",
+		"tipos" : "Agua",
+		"peso" : 4.0,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/shellder.png"
+	},
+	{
+		"numero_pokedex" : 91,
+		"nombre" : "Cloyster",
+		"tipos" : "Agua\/Hielo",
+		"peso" : 132.5,
+		"altura" : 1.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/cloyster.png"
+	},
+	{
+		"numero_pokedex" : 92,
+		"nombre" : "Gastly",
+		"tipos" : "Veneno\/Fantasma",
+		"peso" : 0.1,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/gastly.png"
+	},
+	{
+		"numero_pokedex" : 93,
+		"nombre" : "Haunter",
+		"tipos" : "Fantasma\/Veneno",
+		"peso" : 0.1,
+		"altura" : 1.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/haunter.png"
+	},
+	{
+		"numero_pokedex" : 94,
+		"nombre" : "Gengar",
+		"tipos" : "Fantasma\/Veneno",
+		"peso" : 40.5,
+		"altura" : 1.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/gengar.png"
+	},
+	{
+		"numero_pokedex" : 95,
+		"nombre" : "Onix",
+		"tipos" : "Roca\/Tierra",
+		"peso" : 210.0,
+		"altura" : 8.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/onix.png"
+	},
+	{
+		"numero_pokedex" : 96,
+		"nombre" : "Drowzee",
+		"tipos" : "Psíquico",
+		"peso" : 32.4,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/drowzee.png"
+	},
+	{
+		"numero_pokedex" : 97,
+		"nombre" : "Hypno",
+		"tipos" : "Psíquico",
+		"peso" : 75.6,
+		"altura" : 1.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/hypno.png"
+	},
+	{
+		"numero_pokedex" : 98,
+		"nombre" : "Krabby",
+		"tipos" : "Agua",
+		"peso" : 6.5,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/krabby.png"
+	},
+	{
+		"numero_pokedex" : 99,
+		"nombre" : "Kingler",
+		"tipos" : "Agua",
+		"peso" : 60.0,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/kingler.png"
+	},
+	{
+		"numero_pokedex" : 100,
+		"nombre" : "Voltorb",
+		"tipos" : "Eléctrico",
+		"peso" : 10.4,
+		"altura" : 0.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/voltorb.png"
+	},
+	{
+		"numero_pokedex" : 101,
+		"nombre" : "Electrode",
+		"tipos" : "Eléctrico",
+		"peso" : 66.6,
+		"altura" : 1.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/electrode.png"
+	},
+	{
+		"numero_pokedex" : 102,
+		"nombre" : "Exeggcute",
+		"tipos" : "Psíquico\/Planta",
+		"peso" : 2.5,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/exeggcute.png"
+	},
+	{
+		"numero_pokedex" : 103,
+		"nombre" : "Exeggutor",
+		"tipos" : "Planta\/Psíquico",
+		"peso" : 120.0,
+		"altura" : 2.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/exeggutor.png"
+	},
+	{
+		"numero_pokedex" : 104,
+		"nombre" : "Cubone",
+		"tipos" : "Tierra",
+		"peso" : 6.5,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/cubone.png"
+	},
+	{
+		"numero_pokedex" : 105,
+		"nombre" : "Marowak",
+		"tipos" : "Tierra",
+		"peso" : 45.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/marowak.png"
+	},
+	{
+		"numero_pokedex" : 106,
+		"nombre" : "Hitmonlee",
+		"tipos" : "Lucha",
+		"peso" : 49.8,
+		"altura" : 1.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/hitmonlee.png"
+	},
+	{
+		"numero_pokedex" : 107,
+		"nombre" : "Hitmonchan",
+		"tipos" : "Lucha",
+		"peso" : 50.2,
+		"altura" : 1.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/hitmonchan.png"
+	},
+	{
+		"numero_pokedex" : 108,
+		"nombre" : "Lickitung",
+		"tipos" : "Normal",
+		"peso" : 65.0,
+		"altura" : 1.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/lickitung.png"
+	},
+	{
+		"numero_pokedex" : 109,
+		"nombre" : "Koffing",
+		"tipos" : "Veneno",
+		"peso" : 1.0,
+		"altura" : 0.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/koffing.png"
+	},
+	{
+		"numero_pokedex" : 110,
+		"nombre" : "Weezing",
+		"tipos" : "Veneno",
+		"peso" : 9.5,
+		"altura" : 1.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/weezing.png"
+	},
+	{
+		"numero_pokedex" : 111,
+		"nombre" : "Rhyhorn",
+		"tipos" : "Tierra\/Roca",
+		"peso" : 115.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/rhyhorn.png"
+	},
+	{
+		"numero_pokedex" : 112,
+		"nombre" : "Rhydon",
+		"tipos" : "Roca\/Tierra",
+		"peso" : 120.0,
+		"altura" : 1.9,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/rhydon.png"
+	},
+	{
+		"numero_pokedex" : 113,
+		"nombre" : "Chansey",
+		"tipos" : "Normal",
+		"peso" : 34.6,
+		"altura" : 1.1,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/chansey.png"
+	},
+	{
+		"numero_pokedex" : 114,
+		"nombre" : "Tangela",
+		"tipos" : "Planta",
+		"peso" : 35.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/tangela.png"
+	},
+	{
+		"numero_pokedex" : 115,
+		"nombre" : "Kangaskhan",
+		"tipos" : "Normal",
+		"peso" : 80.0,
+		"altura" : 2.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/kangaskhan.png"
+	},
+	{
+		"numero_pokedex" : 116,
+		"nombre" : "Horsea",
+		"tipos" : "Agua",
+		"peso" : 8.0,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/horsea.png"
+	},
+	{
+		"numero_pokedex" : 117,
+		"nombre" : "Seadra",
+		"tipos" : "Agua",
+		"peso" : 25.0,
+		"altura" : 1.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/seadra.png"
+	},
+	{
+		"numero_pokedex" : 118,
+		"nombre" : "Goldeen",
+		"tipos" : "Agua",
+		"peso" : 15.0,
+		"altura" : 0.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/goldeen.png"
+	},
+	{
+		"numero_pokedex" : 119,
+		"nombre" : "Seaking",
+		"tipos" : "Agua",
+		"peso" : 39.0,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/seaking.png"
+	},
+	{
+		"numero_pokedex" : 120,
+		"nombre" : "Staryu",
+		"tipos" : "Agua",
+		"peso" : 34.5,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/staryu.png"
+	},
+	{
+		"numero_pokedex" : 121,
+		"nombre" : "Starmie",
+		"tipos" : "Agua\/Psíquico",
+		"peso" : 80.0,
+		"altura" : 1.1,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/starmie.png"
+	},
+	{
+		"numero_pokedex" : 122,
+		"nombre" : "Mr. Mime",
+		"tipos" : "Psíquico",
+		"peso" : 54.5,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/mrmime.png"
+	},
+	{
+		"numero_pokedex" : 123,
+		"nombre" : "Scyther",
+		"tipos" : "Volador\/Bicho",
+		"peso" : 56.0,
+		"altura" : 1.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/scyther.png"
+	},
+	{
+		"numero_pokedex" : 124,
+		"nombre" : "Jynx",
+		"tipos" : "Psíquico\/Hielo",
+		"peso" : 40.6,
+		"altura" : 1.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/jynx.png"
+	},
+	{
+		"numero_pokedex" : 125,
+		"nombre" : "Electabuzz",
+		"tipos" : "Eléctrico",
+		"peso" : 30.0,
+		"altura" : 1.1,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/electabuzz.png"
+	},
+	{
+		"numero_pokedex" : 126,
+		"nombre" : "Magmar",
+		"tipos" : "Fuego",
+		"peso" : 44.5,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/magmar.png"
+	},
+	{
+		"numero_pokedex" : 127,
+		"nombre" : "Pinsir",
+		"tipos" : "Bicho",
+		"peso" : 55.0,
+		"altura" : 1.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/pinsir.png"
+	},
+	{
+		"numero_pokedex" : 128,
+		"nombre" : "Tauros",
+		"tipos" : "Normal",
+		"peso" : 88.4,
+		"altura" : 1.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/tauros.png"
+	},
+	{
+		"numero_pokedex" : 129,
+		"nombre" : "Magikarp",
+		"tipos" : "Agua",
+		"peso" : 10.0,
+		"altura" : 0.9,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/magikarp.png"
+	},
+	{
+		"numero_pokedex" : 130,
+		"nombre" : "Gyarados",
+		"tipos" : "Volador\/Agua",
+		"peso" : 235.0,
+		"altura" : 6.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/gyarados.png"
+	},
+	{
+		"numero_pokedex" : 131,
+		"nombre" : "Lapras",
+		"tipos" : "Hielo\/Agua",
+		"peso" : 220.0,
+		"altura" : 2.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/lapras.png"
+	},
+	{
+		"numero_pokedex" : 132,
+		"nombre" : "Ditto",
+		"tipos" : "Normal",
+		"peso" : 4.0,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/ditto.png"
+	},
+	{
+		"numero_pokedex" : 133,
+		"nombre" : "Eevee",
+		"tipos" : "Normal",
+		"peso" : 6.5,
+		"altura" : 0.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/eevee.png"
+	},
+	{
+		"numero_pokedex" : 134,
+		"nombre" : "Vaporeon",
+		"tipos" : "Agua",
+		"peso" : 29.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/vaporeon.png"
+	},
+	{
+		"numero_pokedex" : 135,
+		"nombre" : "Jolteon",
+		"tipos" : "Eléctrico",
+		"peso" : 24.5,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/jolteon.png"
+	},
+	{
+		"numero_pokedex" : 136,
+		"nombre" : "Flareon",
+		"tipos" : "Fuego",
+		"peso" : 25.0,
+		"altura" : 0.9,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/flareon.png"
+	},
+	{
+		"numero_pokedex" : 137,
+		"nombre" : "Porygon",
+		"tipos" : "Normal",
+		"peso" : 36.5,
+		"altura" : 0.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/porygon.png"
+	},
+	{
+		"numero_pokedex" : 138,
+		"nombre" : "Omanyte",
+		"tipos" : "Roca\/Agua",
+		"peso" : 7.5,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/omanyte.png"
+	},
+	{
+		"numero_pokedex" : 139,
+		"nombre" : "Omastar",
+		"tipos" : "Roca\/Agua",
+		"peso" : 35.0,
+		"altura" : 1.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/omastar.png"
+	},
+	{
+		"numero_pokedex" : 140,
+		"nombre" : "Kabuto",
+		"tipos" : "Roca\/Agua",
+		"peso" : 11.5,
+		"altura" : 0.5,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/kabuto.png"
+	},
+	{
+		"numero_pokedex" : 141,
+		"nombre" : "Kabutops",
+		"tipos" : "Roca\/Agua",
+		"peso" : 40.5,
+		"altura" : 1.3,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/kabutops.png"
+	},
+	{
+		"numero_pokedex" : 142,
+		"nombre" : "Aerodactyl",
+		"tipos" : "Roca\/Volador",
+		"peso" : 59.0,
+		"altura" : 1.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/aerodactyl.png"
+	},
+	{
+		"numero_pokedex" : 143,
+		"nombre" : "Snorlax",
+		"tipos" : "Normal",
+		"peso" : 460.0,
+		"altura" : 2.1,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/snorlax.png"
+	},
+	{
+		"numero_pokedex" : 144,
+		"nombre" : "Articuno",
+		"tipos" : "Volador\/Hielo",
+		"peso" : 55.4,
+		"altura" : 1.7,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/articuno.png"
+	},
+	{
+		"numero_pokedex" : 145,
+		"nombre" : "Zapdos",
+		"tipos" : "Volador\/Eléctrico",
+		"peso" : 52.6,
+		"altura" : 1.6,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/zapdos.png"
+	},
+	{
+		"numero_pokedex" : 146,
+		"nombre" : "Moltres",
+		"tipos" : "Fuego\/Volador",
+		"peso" : 60.0,
+		"altura" : 2.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/moltres.png"
+	},
+	{
+		"numero_pokedex" : 147,
+		"nombre" : "Dratini",
+		"tipos" : "Dragón",
+		"peso" : 3.3,
+		"altura" : 1.8,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/dratini.png"
+	},
+	{
+		"numero_pokedex" : 148,
+		"nombre" : "Dragonair",
+		"tipos" : "Dragón",
+		"peso" : 16.5,
+		"altura" : 4.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/dragonair.png"
+	},
+	{
+		"numero_pokedex" : 149,
+		"nombre" : "Dragonite",
+		"tipos" : "Volador\/Dragón",
+		"peso" : 210.0,
+		"altura" : 2.2,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/dragonite.png"
+	},
+	{
+		"numero_pokedex" : 150,
+		"nombre" : "Mewtwo",
+		"tipos" : "Psíquico",
+		"peso" : 122.0,
+		"altura" : 2.0,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/mewtwo.png"
+	},
+	{
+		"numero_pokedex" : 151,
+		"nombre" : "Mew",
+		"tipos" : "Psíquico",
+		"peso" : 4.0,
+		"altura" : 0.4,
+		"foto" : "https:\/\/play.pokemonshowdown.com\/sprites\/bw\/mew.png"
+	}
+]}
